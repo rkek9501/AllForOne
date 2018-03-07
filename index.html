@@ -19,8 +19,8 @@
 				top:0;
 				z-index: 1;
 				overflow-y: auto;
-				width: 10%;
-				height: 30%;
+				width: 15%;
+				height: 100%;
 				padding: 0;
 			}
 
@@ -60,6 +60,21 @@
 			.page2 {background: #50b31b;}
 			.page3 {background: #89c45a;}
 			.page4 {background: #c3f1bc;}
+
+			.ghost-button {
+			  display: inline-block;
+			  position: relative;
+			  padding: 10px 20px;
+			  margin: 50px 20px;
+			  border: 5px solid #fff;
+			  color: #fff;
+			  text-align: center;
+			  text-decoration: none;
+			}
+			.ghost-button:hover {
+			  background-color: #fff;
+			  color: black;
+			}
 		</style>
 
 	</head>
@@ -70,6 +85,11 @@
 			<a href="#2" class="nav-btn">Link2</a>
 			<a href="#3" class="nav-btn">Link3</a>
 			<a href="#4" class="nav-btn">Link4</a>
+
+			<a href="#1" class="ghost-button">Link1</a>
+			<a href="#2" class="ghost-button">Link2</a>
+			<a href="#3" class="ghost-button">Link3</a>
+			<a href="#4" class="ghost-button">Link4</a>
 		</nav>
 	</header>
 		<section id="1" class="page1">
