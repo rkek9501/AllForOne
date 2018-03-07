@@ -1,0 +1,83 @@
+<!doctypehtml>
+<html>
+<head>
+  <metacharest="utf-8">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>카테고리</legend>
+      <label for="ckbox1">취미</label>
+      <input type="radio" name="ckbox" id="long" value="" onClick="checkBox()">
+      &nbsp
+      <label for="ckbox2">생활</label>
+      <input type="radio" name="ckbox" id="short" value="" onClick="checkBox()"><br>
+      <div id="1" style="display:none">
+        <br>
+        <input type="checkbox" name="game" value="game">게임
+        <input type="checkbox" name="sport" value="spo">운동
+        <input type="checkbox" name="movie" value="mov">영화
+        <input type="checkbox" name="travel" value="travel">여행
+      </div>
+
+      <div id="2" style="display:none">
+        <br>
+        <input type="checkbox" name="shop" value="shop">쇼핑
+        <input type="checkbox" name="taxi" value="taxi">택시
+        <input type="checkbox" name="buy" value="buy">공동구매
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>날짜</legend>
+      <label for="ckbox1">장기</label>
+      <input type="radio" name="ckbox" id="long" value="" onClick="checkBox()">
+      &nbsp
+      <label for="ckbox2">단기</label>
+      <input type="radio" name="ckbox" id="short" value="" onClick="checkBox()"><br>
+      <div id="3" style="display:none">
+        <br>
+        <labelfor="start">시작</label>
+        <input id = "start" type = "date">
+
+        <labelfor="end">&nbsp끝</label>
+        <input id = "end" type = "date">
+      </br>
+      </br>
+        <input type="checkbox" name="day" value="mon">월요일
+        <input type="checkbox" name="day" value="tue">화요일
+        <input type="checkbox" name="day" value="wed">수요일
+        <input type="checkbox" name="day" value="thu">목요일
+        <input type="checkbox" name="day" value="fri">금요일
+        <input type="checkbox" name="day" value="sat">토요일
+        <input type="checkbox" name="day" value="sun">일요일
+        <input type="checkbox" name="day" value="evday">매일
+        <input type="checkbox" name="day" value="evwe">매주
+
+      </div>
+      <div id="4" style="display:none">
+        <br>
+        <labelfor="start">시작</label>
+        <input id = "start" type = "date">
+
+        <labelfor="end">&nbsp끝</label>
+        <input id = "end" type = "date">
+      </div>
+    </fieldset>
+
+  <SCRIPT LANGUAGE="JavaScript">
+
+  function checkBox() {
+  var check_Box = document.getElementsByName("ckbox"); //체크박스 name
+  for (j = 0; j < check_Box.length; j++) {
+   var disign = document.getElementById([j+1]); // 보여질내용
+   if(check_Box[j].checked == true ){
+    disign.style.display = "block";
+   }else{
+    check_Box[j].checked = false;
+    disign.style.display = "none";
+   }
+   }
+  }
+  </script>
+  </html>
